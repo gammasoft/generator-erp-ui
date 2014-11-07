@@ -4,7 +4,10 @@
   "description": "Generator para arquitetura padrão da interface do GammaERP",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "gammasoft/generator-erp-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gammasoft/generator-erp-ui.git"
+  },
   "author": {
     "name": "Gammasoft Desenvolvimento de Software Ltda",
     "email": "contato@gammasoft.com.br",
