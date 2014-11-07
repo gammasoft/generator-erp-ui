@@ -1,0 +1,37 @@
+{
+  "name": "generator-erp-ui",
+  "version": "0.0.1",
+  "description": "Generator para arquitetura padrão da interface do GammaERP",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "gammasoft/generator-erp-ui",
+  "author": {
+    "name": "Gammasoft Desenvolvimento de Software Ltda",
+    "email": "contato@gammasoft.com.br",
+    "url": "https://github.com/gammasoft"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.0",
+    "underscore": "^1.7.0",
+    "yeoman-generator": "^0.17.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
