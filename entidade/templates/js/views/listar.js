@@ -10,9 +10,9 @@
 	        ];
 
 	        this.url = '/<%= urlRaiz %>';
-	        opcoes.barraDeFerramentas = obterView('<%= entidadePlural %>', 'ferramentas');
-	        opcoes.acoes = obterView('<%= entidadePlural %>', 'acoes');
-            opcoes.filtragem = obterView('<%= entidadePlural %>', 'filtragem');
+	        opcoes.barraDeFerramentas = obterView('<%= entidadeSingular %>', 'ferramentas');
+	        opcoes.acoes = obterView('<%= entidadeSingular %>', 'acoes');
+            opcoes.filtragem = obterView('<%= entidadeSingular %>', 'filtragem');
 
 	        this.parent('inherit', opcoes, attributes);
 	    }
@@ -21,7 +21,7 @@
 	return Backbone.View.extend({
 
         initialize: function() {
-            this.template = obterTemplate('<%= entidadePlural %>', 'listar');
+            this.template = obterTemplate('<%= entidadeSingular %>', 'listar');
         },
 
         render: function(data) {
