@@ -19,7 +19,6 @@
 	});
 
 	return Backbone.View.extend({
-
         initialize: function() {
             this.template = obterTemplate('<%= entidadeSingular %>', 'listar');
         },

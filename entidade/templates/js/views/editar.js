@@ -11,7 +11,8 @@
         template: obterTemplate('<%= entidadeSingular %>', 'editar'),
 
         _render: function(<%= entidadeSingular %>) {
-            var layoutInterno = new LayoutInternoView(['<%= nomeLegivelSingular %>', 'Editar']).render();
+            var _this = this,
+                layoutInterno = new LayoutInternoView(['<%= nomeLegivelSingular %>', 'Editar']).render();
 
             if(!layoutInterno) {
                 return;
@@ -38,6 +39,10 @@
             } else {
                 this._render(new <%= classeSingular %>());
             }
+        },
+
+        events: {
+
         }
     });
 })();

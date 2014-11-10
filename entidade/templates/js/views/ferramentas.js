@@ -16,9 +16,10 @@
             this.$el.html(this.template());
         	this.$el.find('[rel="tooltip"], abbr').tooltip();
 
-            this._modelBinder.bind(this.<%= entidadeSingular %>, this.el, {
-                //Bindings...
-            });
+            //TODO: Adicicionar bindings personalizados se necessário
+            this._modelBinder.bind(this.<%= entidadeSingular %>, this.el/*, {
+
+            }*/);
         },
 
         events: {
