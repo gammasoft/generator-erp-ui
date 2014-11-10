@@ -118,7 +118,7 @@ var ErpUiEntidadeGenerator = yeoman.generators.Base.extend({
       }
 
       function obterModel() {
-        return modelsPath + '/' + _this.entidadeSingular + '.js';
+        return modelsPath + '/' + _this.entidadeSingular + 'Model.js';
       }
 
       this.dest.mkdir(viewsPath);
