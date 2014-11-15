@@ -34,23 +34,7 @@ var ErpUiEntidadeGenerator = yeoman.generators.Base.extend({
         message: 'Confirma os parâmetros?'
       }];
     } else {
-      prompts = [/*{
-        type: 'input',
-        name: 'entidadeSingular',
-        message: 'Qual o nome da entidade no singular? (camelCase, ex.: boletoBancario)'
-      }, {
-        type: 'input',
-        name: 'entidadePlural',
-        message: 'Qual o nome da entidade no plural? (camelCase, ex.: boletosBancarios)'
-      }, {
-        type: 'input',
-        name: 'classeSingular',
-        message: 'Qual o nome da classe no singular? (PascalCase, ex.: BoletoBancario)'
-      }, {
-        type: 'input',
-        name: 'classePlural',
-        message: 'Qual o nome da classe no plural? (PascalCase, ex.: BoletosBancarios)'
-      }, */{
+      prompts = [{
         type: 'input',
         name: 'nomeLegivelSingular',
         message: 'Qual o nome da entidade no singular (com acentuação)? (ex.: Boleto Bancário)'
@@ -58,15 +42,7 @@ var ErpUiEntidadeGenerator = yeoman.generators.Base.extend({
         type: 'input',
         name: 'nomeLegivelPlural',
         message: 'Qual o nome da entidade no plural (com acentuação)? (ex.: Boletos Bancários)'
-      }/*, {
-        type: 'input',
-        name: 'slugSingular',
-        message: 'Qual o slug da entidade no singular? (ex.: boleto-bancario)'
       }, {
-        type: 'input',
-        name: 'slugPlural',
-        message: 'Qual o slug da entidade no plural? (ex.: boletos-bancarios)'
-      }*/, {
         type: 'input',
         name: 'urlRaiz',
         message: 'Qual a url raiz desta entidade? (ex.: boletos-bancarios)'

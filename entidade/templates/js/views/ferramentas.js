@@ -2,6 +2,11 @@
     return Backbone.View.extend({
         initialize: function(<%= entidadeSingular %>, superDataTable) {
         	this.<%= entidadeSingular %> = <%= entidadeSingular %>;
+
+            if(!(this.<%= entidadeSingular %> instanceof Backbone.Model)) {
+                this.<%= entidadeSingular %> = new Backbone.Model(this.<%= entidadeSingular %>);
+            }
+
             this.superDataTable = superDataTable;
             this.<%= entidadePlural %>Selecionadas = {};
         },

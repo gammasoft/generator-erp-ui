@@ -42,7 +42,19 @@
         },
 
         events: {
+            'click button#salvar': 'salvar'
+        },
 
-        }
+        salvar: function(e) {
+            e.preventDefault();
+
+            var save = this.model.save();
+
+            save.done(function() {
+                showSuccess('Salvo!');
+            });
+
+            save.fail(showError);
+        },
     });
 })();
